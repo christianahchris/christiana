@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <!--css file link-->
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Chriswears Survey Form
+            </h1>
+            <p id="description">
+                Thank you for taking your time to help me improve my business.
+            </p>
+        </header>
+        <form action="" id="survey-form">
+            <!--Text section-->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text"
+                name="name" id="name"
+                class="formControl" placeholder="Enter your name"required>
+            </div>
+            <!--end of text section-->
+
+            <!--Email section-->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text"
+                name="email" id="email"
+                class="formControl" placeholder="Enter your email"required>
+            </div>
+            <!--end of email section-->
+
+            <!--type number section-->
+            <div class="form-group">
+                <label for="number">Number</label>
+                <input type="text"
+                name="phone" id="phone"
+                class="formControl" placeholder="Enter your number"required>
+            </div>
+            <!--end of number section-->
+
+            <!--Address section-->
+            <div class="form-grop">
+                <label for="address">Address<span class="clue">(optional)</span></label>
+                <input type="text"
+                name="address" id="address"
+                class="formControl" placeholder="Enter your address"required>
+            </div>  
+
+            <!--end of address section-->
+
+            <!--select selection-->
+            <div class="form-group">
+                <p id="quest">What option best describe your mood today?</p>
+                <select name="option"
+                id="dropdown" class="formControl" required>
+                <option value="" disabled selected>Select current mood</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="indifferent">Indifferent</option>
+                <option value="other">Other</option>
+            </select>
+            </div>
+            <!--end of select selection-->
+
+            <!--radio button selection-->
+            <div class="form-group">
+                <p id="quest">How did know about Chriswears</p>
+                <label for="">
+                    <input type="radio"
+                    name="source"
+                    value="friends"
+                    class="inputRadio"
+                    checked>Friends
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source"
+                    value="friends"
+                    class="inputRadio"
+                    checked>Facebook ads
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source"
+                    value="friends"
+                    class="inputRadio"
+                    checked>Whatsapp
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source"
+                    value="friends"
+                    class="inputRadio"
+                    checked>Instagram
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source"
+                    value="friends"
+                    class="inputRadio"
+                    checked>Other
+                </label>
+            </div>
+            <!--end of radio button selection-->
+
+            <!--checkbox selection-->
+            <div class="form-group">
+                <p id="quest">What would you want us to improve on?</p>
+                <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="products">Products
+                </label>
+                <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="swift response">Swift response
+                </label>
+                <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="delivery">Delivery
+                </label>
+                <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="customer service">Customer service
+                </label>
+                <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="other">Other
+                </label>
+            </div>
+            <!--end of checkbox selection-->
+
+            <!---Text area section-->
+            <div class="form-group">
+                <p id="quest">How can we improve our service?</p>
+                <textarea name="feedback" cols="30" rows="5"
+                class="textarea" placeholder="Type here..."></textarea>
+            </div>
+            <!--end of text area-->
+
+            <!--submit button-->
+            <div class="form-group">
+                <button type="submit"
+                id="submit"
+                class="btn">Submit</button>
+            </div>
+
+
+            
+        </form>
+
+    
+</body>
+</html>
